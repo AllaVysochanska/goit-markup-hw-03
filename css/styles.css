@@ -1,0 +1,247 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --first-accent-color: #2196f3;
+  --second-accent-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+}
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* основной цвет текста #757575 (абзацы) */
+/* вторичный цвет текста #212121 (заголовки h2,h3)*/
+/* акцентный цвет #2196f3 */
+/* вторичный цвет фона #f5f4fa */
+
+/* Навигация сайта - шапка */
+
+.logo {
+  color: var(--first-accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: var(--title-text-color);
+}
+
+.logo .logo-web:hover,
+.logo .logo-web:hover:focus {
+  color: var(--first-accent-color);
+}
+
+.pages-list .link:hover,
+.pages-list .link:focus {
+  color: var(--first-accent-color);
+}
+
+.pages-list .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.pages-list .link.current {
+  color: var(--first-accent-color);
+}
+
+.contact-list .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.contact-list .link:hover,
+.contact-list .link:focus {
+  color: var(--first-accent-color);
+}
+
+/* Герой */
+.hiro-title {
+  color: var(--second-accent-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Бекграунд временный, только чтобы увидеть белый текст */
+.hiro {
+  background-color: var(--third-background-color);
+}
+
+.hiro-button {
+  color: var(--second-accent-color);
+  background-color: var(--first-accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+/* Секции */
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Преимущества */
+.feature-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text {
+  line-height: 1.71;
+}
+
+/* Команда */
+.team .title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team .text {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team {
+  background-color: var(--second-background-color);
+}
+
+/* Наши услуги */
+
+/* Фильтр кнопок */
+
+.button .item {
+  color: var(--title-text-color);
+  background-color: var(--second-background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.link:hover,
+.logo:hover {
+  cursor: default;
+}
+
+.button .item:hover,
+.button .item:focus {
+  color: var(--second-accent-color);
+  background-color: var(--first-accent-color);
+}
+
+/* Рабочие карточки */
+.work-cards .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.work-cards .text {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 2;
+  text-decoration: none;
+}
+
+/* Подвал */
+
+.footer .logo {
+  color: var(--first-accent-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.footer .logo-web {
+  color: var(--second-accent-color);
+}
+
+.logo .logo-web:hover,
+.logo .logo-web:focus {
+  color: var(--first-accent-color);
+}
+
+/* Бекграунд временный, только чтобы увидеть белый текст */
+.footer {
+  background-color: var(--third-background-color);
+}
+
+.address .text {
+  color: var(--second-accent-color);
+
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.address .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--first-accent-color);
+}
