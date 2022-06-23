@@ -57,7 +57,6 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;  
-  outline: 1px solid rgb(61, 253, 3);
 }
 
 .page-header .main-nav{
@@ -217,6 +216,19 @@ background-color: #188CE8;
 }
 
 /* Преимущества */
+.visualy-hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .feature-list{
  display: flex;
 }
@@ -309,6 +321,19 @@ background-color: #188CE8;
 }
 
 /* Наши услуги */
+
+.visualy-hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .section-works .container{
   width: 1200px;
