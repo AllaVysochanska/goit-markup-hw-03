@@ -38,7 +38,11 @@ ul {
   margin: 0;
 }
 
-.card-image{
+h1, h2, h3, p{
+  margin: 0;
+}
+
+img{
   display: block;
   max-width: 100%;
   height: auto;
@@ -53,7 +57,7 @@ ul {
 
 /* Page header */
 .container{
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;  
@@ -133,7 +137,8 @@ ul {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -148,10 +153,6 @@ ul {
 }
 
 .hiro-title {
-  padding-top: 200px;
-  margin-top: 0px; 
-  margin-bottom: 0px;
-  
   color: var(--second-accent-color);
 
   font-weight: 900;
@@ -160,21 +161,24 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto;
 }
 /* Бекграунд временный, только чтобы увидеть белый текст */
 .hiro {
   background-color: var(--third-background-color);
+  padding: 200px 0;
 }
 
 .hiro-button {
   display: inline-block;
   padding: 10px 32px;
+  border: none;
   border-radius: 4px;
   min-width: 200px;
   min-height: 50px;
   margin-top: 30px;
-  margin-bottom: 200px;
- 
+   
   color: var(--second-accent-color);
   background-color: var(--first-accent-color);
 
@@ -205,8 +209,7 @@ background-color: #188CE8;
 }
 
 .section-title {
-  margin-top: 0px;
-
+  margin-bottom: 50px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -242,10 +245,12 @@ background-color: #188CE8;
   margin-right: 0px;
 }
 
-.feature-list .title {
-  margin-top: 0;
-  margin-bottom: 10;
+.feature-list .element{
+  width: 270px;
+}
 
+.feature-list .title {
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -255,10 +260,9 @@ background-color: #188CE8;
 }
 
 .feature-list .text {
-  margin-top: 0;
-  margin-bottom: 0;
   line-height: 1.71;
-  }
+ }
+
 
 /* Услуги */
 .work-list{
@@ -266,7 +270,6 @@ background-color: #188CE8;
   justify-content: space-between;
 }
 .work-list .title{
-  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -287,6 +290,9 @@ background-color: #188CE8;
 .team .card-sign{
   width: 270px;
   padding: 30px 0px;
+}
+
+.team-item{
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -306,8 +312,6 @@ background-color: #188CE8;
 }
 
 .team .text {
-  margin-top: 0;
-  margin-bottom: 0;
 
   color: var(--primary-text-color);
 
@@ -347,9 +351,12 @@ background-color: #188CE8;
 
 .button{
   display: flex;
-  margin-left: 280px;
-  margin-right: auto;
   margin-bottom: 50px;
+  justify-content: center;
+}
+
+.button .item{
+  margin-right: 8px;
 }
 
 .button .item:not(:last-child){
@@ -364,6 +371,7 @@ background-color: #188CE8;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
+  border: none;
   border-radius: 4px;
 
   display: inline-block;
@@ -468,8 +476,7 @@ margin-bottom: 30px;
 
 .address .text {
   margin-top: 20px;
-  margin-bottom: 9px;
-
+  margin-bottom:9px;
   color: var(--second-accent-color);
 
   line-height: 1.71;
@@ -477,14 +484,16 @@ margin-bottom: 30px;
 }
 
 .address .link {
-  margin-top: 0px;
   margin-bottom: 9px;
-
-   color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 
   line-height: 1.71;
   font-style: normal;
   text-decoration: none;
+}
+
+.address .item:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .address .link:hover,
